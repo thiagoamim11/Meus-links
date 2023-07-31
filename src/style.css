@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {/*
+  background-image: url(/assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center; 
+  background-size: cover;  */    
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+body *{
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+}
+
+.container {
+  margin: 46px auto 0px;
+  width: 360px;
+  padding: 0 24px;
+  }
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+  margin: auto;
+  border-radius: 50%;
+  
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+  
+}
+
+ul li a{
+  justify-content: center;
+  display: flex;
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: (4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+ul li a:hover{
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+.meus-links {
+  display: flex;
+  padding: 24px 0;
+  font-size: 24px;
+  justify-content: center;
+}
+
+.meus-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  padding-right: 5px;
+}
+
+.meus-links a:hover {
+  background: var(--hightlight-color);
+  border-radius: 50%;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(/assets/assets/bg-mobile.jpg);
+  --stroke-color: rgba(255,255,255, 0.5);
+  --surface-color: rgba(255,255,255, 0.05);
+  --surface-color-hover: rgba(0,0,0,0.02);
+  --hightlight-color: rgba(255,255,255,0.2);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(/assets/assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0,0,0,0.5);
+  --surface-color: rgba(0,0,0,0.05);
+  --surface-color-hover: rgba(0,0,0,0.02);
+  --hightlight-color: rgba(0,0,0,0.1);
+}
+ 
+/*
+#switch {
+  width: 32px;
+  height: 32px;
+  background: white center url(../assets/assets/);
+  border: 0;
+  border-radius: 50%;
+
+}
+
+*/
