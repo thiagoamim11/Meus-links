@@ -5,4 +5,6 @@
 
 <h4>Tecnologias usadas: HTML, CSS, JavaScript</h4>
 
+<img src=".github/Screenshot_1.png">
+
 
