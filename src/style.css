@@ -97,30 +97,58 @@ ul li a:hover{
 
 :root {
   --text-color: white;
-  --bg-url: url(/assets/assets/bg-mobile.jpg);
+  --bg-url: url(/assets/assets/bg-desktop.jpg);
   --stroke-color: rgba(255,255,255, 0.5);
   --surface-color: rgba(255,255,255, 0.05);
-  --surface-color-hover: rgba(0,0,0,0.02);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
   --hightlight-color: rgba(255,255,255,0.2);
+  --switch-bg-url: url(/assets/assets/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(/assets/assets/bg-mobile-light.jpg);
+  --bg-url: url(/assets/assets/bg-desktop-light.jpg);
   --stroke-color: rgba(0,0,0,0.5);
   --surface-color: rgba(0,0,0,0.05);
-  --surface-color-hover: rgba(0,0,0,0.02);
+  --surface-color-hover: rgba(0,0,0,0.12);
   --hightlight-color: rgba(0,0,0,0.1);
+  --switch-bg-url: url(/assets/assets/sun.svg);
+}
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
 }
  
-/*
-#switch {
+
+#switch button{
   width: 32px;
   height: 32px;
-  background: white center url(../assets/assets/);
+  background: white center var(--switch-bg-url) no-repeat;
   border: 0;
   border-radius: 50%;
-
+  position: absolute;
+  z-index: 1; /* esse comando sobe o elemento para 1 andar a cima */
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
 }
 
-*/
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  --webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+
