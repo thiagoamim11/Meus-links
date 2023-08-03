@@ -22,7 +22,7 @@ body *{
   margin: 46px auto 0px;
   width: 360px;
   padding: 0 24px;
-  height: 1000px;  /* pra cobrir as sobras que faltava quando o site fica responsivel em formato mobile.  */
+  height: 1000px;  /* pra cobrir as sobras que faltava quando o site fica responsivel em formato mobile.  " Gambiarra kkkkkkkkk " */
   }
 
 #profile {
@@ -139,7 +139,7 @@ ul li a:hover{
 
 .light #switch button {
   right: 0;
-  left: initial;
+  left: initial; 
 }
 
 #switch span {
