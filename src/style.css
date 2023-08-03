@@ -15,12 +15,14 @@ body {/*
 body *{
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
+  
 }
 
 .container {
   margin: 46px auto 0px;
   width: 360px;
   padding: 0 24px;
+  height: 1000px;  /* pra cobrir as sobras que faltava quando o site fica responsivel em formato mobile.  */
   }
 
 #profile {
@@ -150,5 +152,7 @@ ul li a:hover{
   --webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
+
+
 
 
