@@ -20,5 +20,6 @@ function toggleMode() {
   img.setAttribute("src", "../assets/assets/eu2.jpg")
  } else {
     img.setAttribute("src", "../assets/assets/eu.jpg")
- }   */
+ }   */ 
+ 
 }
